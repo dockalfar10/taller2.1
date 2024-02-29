@@ -1,2 +1,2 @@
 # talleres
-para almacenar trabajos y talleres en claes
+para almacenar trabajos y talleres en clases
