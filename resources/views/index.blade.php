@@ -2,10 +2,6 @@
 Sthephani González Pineda
 -->
 @include('/components/header')
-
-    <!--Navegador barra superior de la página-->
-
-
     <!--Carrusel o Slider-->
 
     <div id="beautyCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -40,11 +36,6 @@ Sthephani González Pineda
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    <!--Carrusel o Slider-->
-
-    <!--Container o columnas-->
-
 
     <div class="container text-center mt-5">
         <div class="row">
@@ -87,3 +78,6 @@ Sthephani González Pineda
 
 
 @include('/components/footer')
+@push('scripts')
+    @vite('resources/js/index.js')
+@endpush

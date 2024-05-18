@@ -15,4 +15,9 @@ class InicioController extends Controller
     {
         return view('categorias');
     }
+
+    public function contactanos()
+    {
+        return view('contactanos');
+    }
 }

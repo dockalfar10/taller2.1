@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Cuando se selecciona html 5 nos incluye esta función la cual determina la compatibilidad de idioma y el título de la página-->
@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Shop</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap-icons/font/bootstrap-icons.min.css')}}">
+    @stack('styles')
 
 </head>
 
@@ -20,7 +19,7 @@
     <nav class="navbar navbar-expand-lg " style="background-color: #9900fff5;">
         <!--Style para cambiar color del navegador-->
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="{{route('inicio.index')}}">Beauty Shop</a>
+            <a class="navbar-brand text-white" href="{{ route('inicio.index') }}">Beauty Shop</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,7 +35,7 @@
                     </li> --}}
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('inicio.categorias')}}">Categorias</a>
+                        <a class="nav-link text-white" href="{{ route('inicio.categorias') }}">Categorias</a>
                     </li>
 
                     <li class="nav-item">
@@ -44,12 +43,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Mi cuenta</a>
+                        <a class="nav-link text-white" href="{{ route('inicio.contactanos') }}">Contáctanos</a>
                     </li>
 
 
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex d-none" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-light" type="submit">Search</button> <!--Outline cambiar el boton-->
                 </form>
