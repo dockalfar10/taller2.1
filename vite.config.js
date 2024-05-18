@@ -8,7 +8,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/inicio.js',
-                // 'resources/js/registro.js'
+                'resources/js/categorias.js',
+                'resources/js/contactanos.js'
             ],
             refresh: true,
         }),

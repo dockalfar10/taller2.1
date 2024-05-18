@@ -14,24 +14,26 @@
                 </div>
             </div>
             <div class="col-7">
-                <div class="form-group">
-                    <label for="inputName">Nombre</label>
-                    <input type="text" id="inputName" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail">E-Mail</label>
-                    <input type="email" id="inputEmail" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="inputSubject">Asunto</label>
-                    <input type="text" id="inputSubject" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="inputMessage">Mensaje</label>
-                    <textarea id="inputMessage" class="form-control" rows="4"></textarea>
-                </div>
-                <div class="form-group mt-2">
-                    <input type="submit" class="btn btn-primary" value="Enviar">
+                <div class="form" id="formularioContactanos">
+                    <div class="form-group">
+                        <label for="inputName">Nombre</label>
+                        <input type="text" id="inputName" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">E-Mail</label>
+                        <input type="email" id="inputEmail" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSubject">Asunto</label>
+                        <input type="text" id="inputSubject" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Mensaje</label>
+                        <textarea id="inputMessage" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="form-group mt-2">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,5 +41,9 @@
 
 </section>
 
+
+@push('scripts')
+    @vite('resources/js/contactanos.js')
+@endpush
 
 @include('/components/footer')
