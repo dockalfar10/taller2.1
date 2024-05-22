@@ -14,18 +14,47 @@
                 </div>
             </div>
             <div class="col-7">
-                <div class="form" id="formularioContactanos">
+                <form class="form" id="formularioContactanos" method="POST" action="/contactanos/guardar-datos">
+                    @csrf
                     <div class="form-group">
-                        <label for="inputName">Nombre</label>
-                        <input type="text" id="inputName" class="form-control" />
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="inputName">Nombre</label>
+                                <input type="text" id="inputName" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputLastName">Apellido</label>
+                                <input type="text" id="inputLastName" class="form-control" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="inputEmail">E-Mail</label>
-                        <input type="email" id="inputEmail" class="form-control" />
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputDocumento">Documento</label>
+                                <input type="number" id="inputDocumento" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputEmail">E-Mail</label>
+                                <input type="email" id="inputEmail" class="form-control" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="inputSubject">Asunto</label>
-                        <input type="text" id="inputSubject" class="form-control" />
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputTelefono">Teléfono</label>
+                                <input type="number" id="inputTelefono" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputSubject">Asunto</label>
+                                <input type="text" id="inputSubject" class="form-control" />
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="inputMessage">Mensaje</label>
@@ -34,7 +63,7 @@
                     <div class="form-group mt-2">
                         <input type="submit" class="btn btn-primary" value="Enviar">
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

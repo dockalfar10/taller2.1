@@ -39,7 +39,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Catalogo</a>
+                        <a class="nav-link text-white" href="{{ route('inicio.catalogo') }}">Catalogo</a>
                     </li>
 
                     <li class="nav-item">
