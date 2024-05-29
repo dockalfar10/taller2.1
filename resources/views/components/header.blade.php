@@ -38,7 +38,7 @@
                         <a class="nav-link text-white" href="{{ route('inicio.categorias') }}">Categorias</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item d-none">
                         <a class="nav-link text-white" href="{{ route('inicio.catalogo') }}">Catalogo</a>
                     </li>
 

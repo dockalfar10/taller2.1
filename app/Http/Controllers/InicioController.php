@@ -29,12 +29,12 @@ class InicioController extends Controller
 
     public function guardarDatos(Request $request)
     {
-        // return Inicio::guardarDatos($request);
-        $request->validate([
-            'nombre' => 'required',
-            'email' => 'required|email',
-            'mensaje' => 'required'
-        ]);
+        $insertion = Inicio::guardarDatos($request);
+        if ($insertion == 'Datos guardados') {
+            return redirect()->route('inicio.contactanos');
+        } else {
+            return redirect()->route('inici.contactanos');
+        }
     }
 
 }
